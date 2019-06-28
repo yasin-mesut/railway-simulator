@@ -1,0 +1,24 @@
+@import '../styles/utils/_vars.scss';
+
+.station-node {
+  position: absolute;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+
+  &--is-multi-node {
+    // Since there' s a 5px border, we make the overall
+    // width/height a bit smaller to keep the elements centered.
+    width: $size - (2 * $border);
+    height: $size - (2 * $border);
+    border: $border solid black;
+    background-color: white !important;
+  }
+
+  .title {
+    min-width: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: -35px;
+  }
+}

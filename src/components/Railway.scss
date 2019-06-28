@@ -1,0 +1,19 @@
+@import '../styles/utils/vars';
+
+.railway {
+  position: absolute;
+  width: $size;
+  height: $size;
+  border-radius: $borderRadius;
+  transition: all 1s;
+  z-index: 1;
+
+  & &-pulse {
+    height: 100%;
+    width: 100%;
+    border-radius: $borderRadius;
+    animation: pulse 2s infinite;
+  }
+}
+
+
